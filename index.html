@@ -12,37 +12,39 @@
     body{
         
         font-size: xx-large;
-        padding: 260px; 
+        padding: 260px;
+    } 
     
       main{
        border: 3px solid black; 
        width: fit-content;
        background-color: blue;
        color: antiquewhite; 
+       position: fixed; 
+       left: 15px; 
+       bottom: 20px;
+      }
 
-      div:nth-of-type(2){
-      background-color: rgb(141, 103, 192); 
-     
-
-      }
-      }
-      div:nth-of-type(3){
-      background-color: rgb(218, 32, 94);
-      }
-      div:nth-of-type(4){
-      background-color: rgb(13, 13, 199) ;
-      }
-      div:nth-of-type(5){
-      background-color:black ;
-      }
-      div:nth-of-type(6){
-      background-color: red ;
-      }
-    }
-
+     main div{
     
+    transition: transform 0.3s ease;
+
+      & :hover{ 
+        left: 100%;  
+        background-color: black;
+        transform: translateX(50%); 
+          
+      } 
+    }
       
     
+     
+  main div:nth-of-type(1) { background-color: rgb(142, 49, 165); }
+  main div:nth-of-type(2) { background-color: rgb(141, 103, 192); }
+  main div:nth-of-type(3) { background-color: rgb(218, 32, 94); }
+  main div:nth-of-type(4) { background-color: rgb(13, 13, 199); }
+  main div:nth-of-type(5) { background-color: black; }
+  main div:nth-of-type(6) { background-color: red; }
     
     
 </style>
@@ -54,9 +56,15 @@
      <div><i class="fa-brands fa-instagram"></i></div>
      <div><i class="fa-brands fa-linkedin-in"></i></div>     
      <div><i class="fa-brands fa-github"></i></div>
-     <div><i class="fa-brands fa-youtube"></i></div>
-    
+     <div><i class="fa-brands fa-youtube"></i></div> 
+
+     
     </main>
-      
+      <section>Lorem ipsum dolor sit amet consectetur adipisicing elit. In iure quis ut asperiores suscipit aperiam adipisci enim dolor saepe neque ad nobis distinctio, doloremque, accusantium quibusdam ipsam incidunt quos eos?</section>
+    <br><br><br>
+      <section> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores alias ducimus, iure recusandae, nesciunt ea, molestias tempora voluptatum laboriosam hic exercitationem facilis? Ut, natus a ducimus eius omnis sunt corrupti!</section>
+    <br><br><br>
+
+     <section>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, quos voluptatem iure similique sit, maxime a placeat culpa beatae tenetur nostrum ea corporis, delectus reprehenderit? Non nobis impedit possimus blanditiis!</section>
 </body>
 </html>
